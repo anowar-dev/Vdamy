@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     list-style: none;
-    transition: all .4s;
+    transition: all .3s;
 }
 img{
     max-width: 100%;
@@ -1121,13 +1121,13 @@ body li{
     color: rgb(237, 237, 237);
     margin: 20px auto;
 }
-.footer_top .footer_social{
+.social{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 5px;
 }
-.footer_social .social_inner a i{
+.social .social_inner a i{
     color: rgb(255, 255, 255);
     font-size: 16px;
     width: 30px;
@@ -1138,7 +1138,7 @@ body li{
     border-radius: 5px;
     transition: .4s;
 }
-.footer_social .social_inner a:hover i{
+.social .social_inner a:hover i{
     background: #FE4A55;
 }
 
@@ -1848,4 +1848,302 @@ body li{
   
   
   
-  
+/*====================Responsive Login/Register Page =========================*/
+@media (max-width: 1199px) {
+    .auth_stra_animate{
+        display: none;
+    }
+    .auth_body .auth_body_main{
+        column-gap: 4%;
+    }
+    .auth_body_section{
+        padding: 80px 50px;
+    }
+    .auth_body_main .login{
+        width: 70%;
+    }
+}
+@media (max-width: 1090px) {
+    .auth_body_section{
+        padding: 80px 0;
+        margin-bottom: 0;
+    }
+    .auth_body_section{
+        padding-bottom: 50px;
+    }
+    
+}
+@media (max-width: 1024px) {
+    .auth_body_main .login{
+        width: 80%;
+    }
+}
+@media (max-width: 992px) {
+    .auth_title_content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .auth_body .auth_body_main{
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .auth_body_main .login{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .auth_body .auth_body_main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .auth_body .auth_body_main{
+        padding: 0;
+    }
+    .auth_body_section{
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .auth_title_content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .auth__title_section .container .auth_title{
+        padding: 20px 0;
+    }
+}
+
+
+/*===================== Contact Page Design Start ============================*/
+
+/*----------- Contact Title ----------*/
+.contact_home_section{
+    background: #F8F9F8;
+    padding-top: 20px;
+}
+.contact_home_section .container .contact_title{
+    position: relative;
+    margin: 0 100px;
+}
+.contact_star_animate{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+/*--------- Contact Body ----------------------*/
+.contact_body .container .contact_main{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 4%;    
+}
+.contact_main .contact_details{
+    width: 48%;
+}
+.contact_main .contact_form{
+    width: 48%;
+}
+.contact_details_info .contact_inner_info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 25px;
+}
+.contact_details_info .contact_inner_info:hover .inner_icon{
+    background: #FE4A55;
+    color: #ffffff;
+}
+.contact_inner_info .inner_icon{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 85px;
+    height: 85px;
+    width: 75px;
+    text-align: center;
+    background: rgb(248, 249, 248);
+    color: #FE4A55;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.contact_inner_info .inner_text h3{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28.5px;
+    color: rgb(34, 22, 56);
+    margin-top: 10px;
+}
+.contact_inner_info .inner_text p, a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.6px;
+    color: rgb(96, 96, 96);
+    max-width: 300px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.contact_inner_info .inner_text a:hover{
+    color: #FE4A55;
+}
+.contact_main .contact_form{
+    background: #FE4A55;
+    padding: 30px;
+    border-radius: 5px;
+}
+.contact_main .contact_form h2{
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 39px;
+    color: rgb(255, 255, 255);
+}
+.contact_main .contact_form p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: rgb(255, 255, 255);
+}
+.contact_main .contact_form input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: transparent;
+    outline: 0;
+    border-radius: 5px;
+    background: rgb(194, 43, 52);
+    margin-bottom: 15px;
+    cursor: #fff !important;
+}
+.contact_main .contact_form textarea{
+    background: rgb(194, 43, 52);
+    padding: 12px;
+    height: 150px;
+    border-radius: 5px;
+    width: 100%;
+    outline: 0 !important;
+    border: transparent;
+}
+.contact_main .contact_form textarea::placeholder{
+    color: #CDCDCD;
+}
+.contact_main .contact_form input::placeholder{
+    color: #CDCDCD;
+}
+.contact_form input[type=button]{
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #000;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.contact_form input[type=button]:hover{
+    color: #FE4A55;
+    background: #ffffff;
+}
+
+.google_map .map{
+    height: 500px;
+}
+
+
+/*=================== About Section design start =============================*/
+.distance_learning_top{
+    background: #FFFFFF;
+}
+.education_main_for_about{
+    padding-top: 0;
+}
+.course_advisor{
+    background: #F9F9F9;
+}
+.course_advisor .container .course_advisor_main{
+    padding: 100px;
+}
+.course_advisor_main .course_advisor_title{
+    text-align: center;
+    margin: auto;
+    max-width: 575px;
+    margin-bottom: 50px;
+}
+.carousel-item .advisor_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+}
+.advisor_content .advisor_inner_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0;
+}
+.advisor_inner_content .avisor_image{
+    width: 32%;
+}
+.advisor_inner_content .avisor_text{
+    width: 67%;
+}
+.social .social_inner a i{
+    background: rgba(0, 0, 0, .1);
+    color: #000;
+}
+.social .social_inner a i:hover{
+    color: #fff;
+}
+.about_access{
+    background: #FEF8EF;
+}
+
+/*----------- About Responsive ----------*/
+@media (max-width: 1198px) {
+    .course_advisor .container .course_advisor_main{
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 1100px) {
+    .course_advisor .container .course_advisor_main{
+        padding: 100px 0;
+    }
+}
+@media (max-width: 1024px) {
+    .course_advisor .container .course_advisor_main{
+        padding: 100px;
+    }
+    .advisor_content .advisor0{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .course_advisor .container .course_advisor_main{
+        padding: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .course_advisor .container .course_advisor_main{
+        padding: 50px 0;
+    }
+}
+@media (max-width: 576px) {
+    .advisor_inner_content{
+        flex-direction: column;
+    }
+    .advisor_inner_content .avisor_image{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .advisor_inner_content .avisor_text{
+        width: 100%;
+        margin: auto;
+    }
+}
