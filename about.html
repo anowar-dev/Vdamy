@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="img/background/border-round.png" type="image/x-icon">
     <title>Vdemy</title>
 
-    <!------------ Font Awesome Link ------------>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!------------ Font Awesome Kit ------------>
+    <script src="https://kit.fontawesome.com/0e40ebbbef.js" crossorigin="anonymous"></script>
 
     <!------------ Google Fonts ------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,9 +58,9 @@
                                 <i class="fa-solid fa-chevron-down"></i>
                                 </a>
                                 <ul class="inner_menu">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Login/Register</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="auth.html">Login/Register</a></li>
                                     <li><a href="#">Other</a></li>
                                 </ul>
                             </li>
@@ -86,8 +86,8 @@
                                 </a>
                                 <ul class="inner_menu">
                                     <li><a href="#">Shop 1</a></li>
-                                    <li><a href="#">Shop 2</a></li>
-                                    <li><a href="#">Shop 3</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
                                 </ul>
                             </li>
                             <li class="main_li"><a href="#">
@@ -184,9 +184,9 @@
                             <h4><a href="#">Pages</a></h4>
                         </div>
                         <div class="mobile_menu_body">
-                            <h5><a href="#">About us</a></h5>
-                            <h5><a href="#">Contact us</a></h5>
-                            <h5><a href="#">Login/Register</a></h5>
+                            <h5><a href="about.html">About us</a></h5>
+                            <h5><a href="contact.html">Contact us</a></h5>
+                            <h5><a href="auth.html">Login/Register</a></h5>
                             <h5><a href="#">Other</a></h5>
                         </div>
                     </div>
@@ -215,8 +215,8 @@
                         </div>
                         <div class="mobile_menu_body">
                             <h5><a href="#">Shop 1</a></h5>
-                            <h5><a href="#">Shop 2</a></h5>
-                            <h5><a href="#">Shop 3</a></h5>
+                            <h5><a href="cart.html">Cart</a></h5>
+                            <h5><a href="checkout.html">Checkout</a></h5>
                         </div>
                     </div>
                     <div class="mobile_menu_inner">
@@ -235,9 +235,9 @@
     </section>
 
 
-
+<!--  -->
     <!-- Start About Section -->
-    <!-------------------------- About Title -------------------------->
+    <!-- ------------------------ About Title ------------------------ -->
     <section class="auth__title_section about_section">
         <div class="container">
             <div class="auth_title about_title">
@@ -255,9 +255,9 @@
             </div>
         </div>
     </section>
-
-
-    <!------------------- Distance Learning Top Section -------------------------->
+<!--  -->
+<!--  -->
+    <!-- ----------------- Distance Learning Top Section ------------------------ -->
     <section class="online_learning distance_learning_top">
         <div class="container">
             <div class="online_main">
@@ -334,8 +334,8 @@
             </div>
         </div>
     </section>
-
-    <!------------------------- Distance Learning ------------------------------->
+<!--  -->
+    <!-- ----------------------- Distance Learning ----------------------------- -->
     <section class="distance_learning">
         <div class="container">
             <div class="disnatce_main">
@@ -464,7 +464,7 @@
                             </button>
                                 
                         </div>
-                        <!-------- Modal ------->
+                        <!-- ------ Modal ----- -->
                         <div class="modal fade" id="video_modal">
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                 <div class="modal-content">
@@ -484,8 +484,8 @@
             </div>
         </div>
     </section>
-
-    <!--------------------- Education section for about page ------------------>
+<!--  -->
+    <!-- ------------------- Education section for about page ---------------- -->
     <section class="education education_for_about">
         <div class="container">
             <div class="education_main education_main_for_about">
@@ -555,8 +555,8 @@
             </div>
         </div>
     </section>
-
-    <!---------------- Course Advisor Section ----------------->
+<!--  -->
+    <!-- -------------- Course Advisor Section --------------- -->
     <section class="course_advisor">
         <div class="container">
             <div class="course_advisor_main">
@@ -755,8 +755,8 @@
             </div>
         </div>
     </section>
-
-    <!---------------- CERTIFICATION ------------------------------>
+<!--  -->
+    <!-- -------------- CERTIFICATION ---------------------------- -->
     <section class="certification about_access">
         <div class="container">
             <div class="certification_main">                
@@ -789,8 +789,8 @@
             </div>
         </div>
     </section>
-
-    <!------------------ Brand Logo -------------------------->
+<!--  -->
+    <!-- ---------------- Brand Logo ------------------------ -->
     <section class="brand_logo">
         <div class="container">
             <div class="brand_logo_main">
@@ -815,9 +815,9 @@
             </div>
         </div>
     </section>
-
-
-     <!------------------------- Footer Section --------------------------------->
+<!--  -->
+<!--  -->
+     <!-- ----------------------- Footer Section ------------------------------- -->
     <section class="footer">
         <div class="container">
             <div class="footer_main">
@@ -901,8 +901,11 @@
 
 
 
-    <a href="#" class="top"><i class="fa-solid fa-chevron-up"></i></a>
+    <div class="back-top" onclick="topFunction()" id="topBtn">
+        <a href="#" class="top"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>

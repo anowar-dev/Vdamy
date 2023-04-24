@@ -32,17 +32,29 @@ body a{
     font-family: 'Nunito', sans-serif;
 }
 
+input{
+    background: #F9F9F9;
+    outline: 0;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+input:focus{
+    border: 1px solid #FE4A55 !important;
+}
+
 body li{
     list-style: none;
 }
-
+body{
+    position: relative;
+}
+.back-top{
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
 .top {
-    --offset: 50px; 
-    position: sticky !important;
-    bottom: 20px;
-    left: 95%;     
-    place-self: end;
-    margin-top: calc(100vh + var(--offset));
 
     padding: 9px 12px;
     font-weight: 900;
@@ -57,7 +69,9 @@ body li{
 .top:hover{
     background: #FE4A55;
     color: #fff;
-    bottom: 27px;
+}
+.back-top:hover{
+    bottom: 35px;
 }
 
 .shoping_bag i{
@@ -93,6 +107,9 @@ body li{
     z-index: -1;
     transition: .4s;
 }
+.btn_red i{
+    margin-top: -4px;
+}
 .btn_red:hover::after{
     width: 100%;
 }
@@ -122,8 +139,7 @@ body li{
     position: absolute;
     right: 15px;
     color: #fe4a55;
-    top: 50%;
-    bottom: 50%;
+    top: -40%;
     line-height: 20%;
 }
 .card{
@@ -264,10 +280,11 @@ body li{
 }
 .header_main .manu_account .shoping_bag{
     position: relative;
+    margin-bottom: 22px;
 }
 .header_main .manu_account .shoping_bag p{
     position: absolute;
-    top: -5px;
+    top: 30px;
     right: -5px;
     color: #ffffff;
     background: #fe4a55;
@@ -284,7 +301,6 @@ body li{
     justify-content: space-between;
     align-items: center;
     column-gap: 25px;
-    margin-top: 10px;
 }
 
 .header_main .manu_account .main_menu ul li a{
@@ -305,7 +321,6 @@ body li{
 }
 .main_li{
     position: relative;
-    padding-top: 20px !important;
     padding-bottom: 25px !important;
     margin-bottom: 0px !important;
 }
@@ -1221,479 +1236,6 @@ body li{
 }
 
 
-/*==================== Home Page Responsive Start ==========================*/
-.modile_menu_section{
-    display: none;
-}
-@media (max-width: 1201px) {
-    .user_desktop{
-        display: none;
-    }
-    .user_mobile{
-        display: block;
-    }
-}
-@media (max-width: 1198px) {
-    .slider .container .slider_main{
-        flex-direction: column;
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .slider_main .slider_text{
-        width: 70% !important;
-        margin-top: 0 !important;
-    }
-    .slider_main .slider_user{
-        width: 100%;
-        justify-content: space-between !important;
-        column-gap: 4%;
-    }
-    .slider_main .slider_user .card{
-        width: 48% !important;
-    }
-    .slider_animation_round, .animation_red, .animation_red_borders, .animation_yellow, .animation_bordered, .self_yellow, .self_red_circle, .self_red_br, .plus_animation, .distance_dot_animate, .distance_border_animate, .top_red_animate, .botom_star, .certification_rb, .certification_yr, .certification_rr{
-        display: none;
-    }
-    .brand_logo .container .brand_logo_main{
-        padding-left: 100px;
-        padding-right: 100px;
-        column-gap: 3%;
-    }
-    .education_content .card_light {
-        padding: 30px 15px;
-    }
-    .education_content .card_light .education_icon{
-        font-size: 40px;
-        line-height: 1;
-    }
-    .education_content .card_light .education_inner_title h4{
-        font-size: 20px;
-    }
-    .sub_title {
-        font-size: 29px;
-        line-height: 34px;
-    }
-    .self_developmenr_inner .self_content{
-        padding: 30px;
-    }
-    .self_developmenr_inner .self_image{
-        width: 100% !important;
-    }
-    .attending_text{
-        padding: 50px 0 50px 100px;
-    }
-    .attending_image .attending_image_inner{
-        padding-right: 50px;
-    }
-
-}    
-@media (max-width: 1114px) {
-    .header_main .manu_account .main_menu ul{
-        column-gap: 10px;
-    }
-    .search{
-        width: 200px;
-    }
-}
-@media (max-width: 1024px) {
-    .education_main{
-        padding: 100px 50px !important;
-    }
-    .self_content{
-        padding: 20px 10px !important;
-    }
-    .top{
-        left: 93%;
-    }
-}
-@media (max-width: 992px) {
-    .header{
-        display: none;
-    }
-    .search_menu {
-        margin-top: 20px;
-        border-top: 1px solid #ddd;
-        padding: 20px 0;
-    }
-    .modile_menu_section{
-        display: block;
-        padding: 20px 50px;
-        position: sticky !important;
-        top: 0;
-        z-index: 11;
-        background: #fff;
-        box-shadow: 0 0 10px 5px rgba(0, 0, 0, .06);
-    }
-    .search{
-        width: 100%;
-    }
-    .modile_menu_section .container .mobile_menu_main{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .mobile_menu_main .mobile_icons{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        column-gap: 12px;
-    }
-    .user_btn_mobile{
-        font-size: 18px;
-        padding: 2px 8px;
-        margin-bottom: 5px;
-    }
-    .mobile_icons .bar_icon i{
-        font-size: 30px;
-        color: rgba(0, 0, 0, .5);
-        cursor: pointer;
-    }
-    .mobile_icons .mobile_bag{
-        position: relative;
-    }
-    .mobile_icons .mobile_bag a{
-        font-size: 22px;
-        line-height: 22px;
-        color: rgb(34, 22, 56);
-        transition: .4s;
-    }
-    .mobile_icons .mobile_bag a:hover{
-        color: #FE4A55;
-    }
-    .mobile_icons .mobile_bag p{
-        position: absolute;
-        font-size: 10px;
-        top: -5px;
-        right: -5px;
-        width: 12px;
-        height: 12px;
-        line-height: 12px;
-        text-align: center;
-        border-radius: 50%;
-        color: #ffffff;
-        background: #FE4A55;
-    }
-    .mobile_menu_search{
-        display: none;
-        padding-right: 5px;
-        border-top: 1px solid rgba(0, 0, 0, .5);
-        margin-top: 20px;
-        height: 570px;
-        overflow-y: auto;
-    }
-    .mobile_menu_search .mobile_search{
-        margin: 20px auto;
-    }
-    .mobile_menu_inner .mobile_menu_title a{
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 22px;
-        color: rgb(34, 22, 56);
-    }
-    .mobile_menu_inner .mobile_menu_body{
-        border: 1px solid #ddd;
-        padding: 20px;
-    }
-    .mobile_menu_inner .mobile_menu_body a{
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 21px;
-        color: rgb(34, 22, 56);   
-    }
-    .mobile_menu_inner a{
-        transition: .4s;
-    }
-    .mobile_menu_inner a:hover{
-        color: #FE4A55;
-    }
-    .slider .container .slider_main{
-        text-align: center;
-    }
-    .slider_main .slider_user .slider_user_right{
-        margin-top: 50px !important;
-        margin-bottom: 0;
-    }
-    .slider_main .slider_user .slider_user_left{
-        margin-top: 50px !important;
-        margin-bottom: 100px;
-    }
-    .slider .container .slider_main .slider_text{
-        text-align: center;
-        margin: auto;
-    }
-    .slider .container .slider_main .slider_text h2{
-        font-size: 35px;
-        line-height: 42px;
-    }
-    .slider .container .slider_main .slider_text p{
-        font-size: 15px;
-        line-height: 27px;
-        margin: 15px auto;
-    }
-    .slider_user{
-        width: 100%;
-    }
-    .slider_text_main{
-        margin: auto !important;
-    }
-    .slider_text_main .slider_text_btnm{
-        margin: 10px auto !important;
-        text-align: center;
-    }
-    .brand_logo{
-        padding-top: 0;
-    }
-    .brand_logo .container .brand_logo_main{
-        flex-wrap: wrap;
-        row-gap: 15px;
-    }
-    .slider_animation_doted{
-        display: none;
-    }
-    .slider_btn_red{
-        margin: auto;
-    }
-    .education_main .education_content{
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-    .online_learning .container .online_main{
-        flex-direction: column;
-        width: 100% !important;
-        padding: 50px;
-    }
-    .online_main .online_img{
-        width: 100%;
-    }
-    .online_main .online_content{
-        width: 100%;
-        text-align: center;
-        margin: 25px auto;
-    }
-    .online_btn_red{
-        margin: auto;
-    }
-    .popular_crs_main .popular_crs_content{
-        flex-wrap: wrap;
-        row-gap: 30px;
-    }
-    .popular_inner_content{
-        width: 48%;
-        margin: auto;
-    }
-    .disnatce_main .distance_top{
-        flex-direction: column;
-        text-align: center;
-    }
-    .disnatce_main .distance_top .distance_left{
-        width: 100%;
-    }
-    .disnatce_main .distance_top .distance_right{
-        width: 100%;
-    }
-    .self_main .self_developmenr_inner{
-        flex-direction: column;
-        text-align: center;
-    }
-    .self_developmenr_inner .self_content{
-        padding: 50px !important;
-    }
-    .btn_red{
-        margin: auto;
-    }
-    .blog_content .blog_content_inner{
-        flex-wrap: wrap;
-        margin: auto;
-        row-gap: 20px;
-    }
-    .blog_content_inner .blog_inner_box{
-        width: 48%;
-        margin: auto;
-    }
-    .attending .container .attending_main{
-        flex-direction: column;
-        text-align: center;
-    }
-    .attending_text{
-        width: 100%;
-        margin-bottom: 200px;
-    }
-    .attending_image .attending_image_inner{
-        text-align: center;
-        right: 10%;
-    }
-    .footer_main .footer_top{
-        grid-template-columns: repeat(2, 1fr);
-    }
-} 
-@media (max-width: 767px) {
-    .top{
-        font-size: 18px;
-        padding: 7px 10px;
-        left: 91%;
-    }
-    .slider{
-        padding: 50px 0;
-    }
-    .slider .container .slider_main .slider_text{
-        width: 100% !important;
-        margin: 10px auto !important;
-    }
-    .slider .container .slider_main .slider_user{
-        flex-direction: column;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-    .slider_user .slider_user_left{
-        width: 100% !important;
-        margin: 20px auto !important;
-        padding: 0 !important;
-    }
-    .slider_user .slider_user_right{
-        width: 100% !important;
-        margin: 20px auto !important;
-        padding: 0 !important;
-    }
-    .brand_logo_main{
-        padding: 0 30px !important;
-    }
-    .education_main{
-        padding: 50px !important;
-    }
-    .popular_course .container .popular_crs_main{
-        padding: 50px !important;
-    }
-    .card{
-        width: 100%;
-    }
-    .distance_right .distance_user .distance_user_left{
-        margin-top: 0;
-    }
-    .distance_right .distance_user .distance_user_right{
-        margin-bottom: 0;
-    }
-    .distance_bottom .videos{
-        width: 100%;
-        margin: 0 auto !important;
-    }
-    .distance_learning .container .disnatce_main{
-        padding: 50px;
-    }
-    .modal-content{
-        max-width: 100%;
-        height: 400px;
-    }
-    .blog_section .container .blog_main{
-        padding: 50px;
-    }
-    .attendng_text{
-        width: 100% !important;
-        padding-bottom: 100px;
-    }
-    .certification .container .certification_main{
-        padding: 50px;
-    }
-    .footer_main .footer_top{
-        padding: 50px;
-    }
-    .footer_main .footer_bottom{
-        flex-direction: column;
-    }
-    .blog_content .blog_content_inner{
-        flex-direction: column;
-        row-gap: 50px;
-    }
-    .blog_content_inner .blog_inner_box{
-        width: 100%;
-    }
-}
-@media (max-width: 576px) {
-    .modile_menu_section{
-        padding: 20px 0;
-    }
-    .slider{
-        padding: 20px 0 !important;
-    }
-    .slider .container .slider_main .slider_text{
-        width: 100%;
-    }
-    .brand_logo .container .brand_logo_main{
-        padding: 20px 0 !important;
-        row-gap: 15px;
-        column-gap: 50px;
-    }
-    .brand_logo{
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    .education_main{
-        padding: 40px 0 !important;
-    }
-    .education_main .education_content{
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 30px;
-    }
-    .online_learning .container .online_main{
-        padding: 40px 0 !important;
-    }
-    .sub_title{
-        font-size: 25px;
-        line-height: 30px;
-        padding: 0 !important;
-    }
-    .small_title{
-        font-size: 12.5px;
-        line-height: 18.5px;
-    }
-    .paragraph{
-        font-size: 14px;
-        line-height: 24px;
-    }
-    .online_inner_btns{
-        flex-direction: column;
-        text-align: center;
-    }
-    .popular_course .container .popular_crs_main{
-        padding: 40px 0 !important;
-    }
-    .distance_learning .container .disnatce_main{
-        padding: 40px 0 !important;
-    }
-    .distance_right .distance_user{
-        flex-direction: column;
-    }
-    .distance_right .distance_user .distance_user_left{
-        width: 100%;
-    }
-    .distance_right .distance_user .distance_user_right{
-        width: 100%;
-    }
-    .self_development .container .self_main{
-        padding: 0;
-    }
-    .self_developmenr_inner .self_content{
-        padding: 40px 20px !important;
-    }
-    .blog_section .container .blog_main{
-        padding: 40px 0 !important;
-    }
-    .attending .container .attending_main{
-        padding: 0 !important;
-    }
-    .certification .container .certification_main{
-        padding: 40px 0 !important;
-    }
-    .footer_main .footer_top{
-        padding: 40px 0 !important;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .footer_top .footer_top_explore{
-        padding-left: 0;
-    }
-}
-
-
 /*==================== Start Login/Register Page Design =========================*/
 .auth__title_section{
     background: #F8F9F8;
@@ -1825,11 +1367,12 @@ body li{
 }
 .check_text .checkmark{
     position: absolute;
-    top: 0;
+    top: -38px;
     left: 0;
     height: 18px;
     width: 18px;
     background-color: #eee;
+    border-radius: 5px;
 }
 .check:hover input ~ .checkmark{
     background-color: #ccc;
@@ -1844,76 +1387,6 @@ body li{
 }
 .check input:checked ~ .checkmark:after{
     display: block;
-}
-  
-  
-  
-/*====================Responsive Login/Register Page =========================*/
-@media (max-width: 1199px) {
-    .auth_stra_animate{
-        display: none;
-    }
-    .auth_body .auth_body_main{
-        column-gap: 4%;
-    }
-    .auth_body_section{
-        padding: 80px 50px;
-    }
-    .auth_body_main .login{
-        width: 70%;
-    }
-}
-@media (max-width: 1090px) {
-    .auth_body_section{
-        padding: 80px 0;
-        margin-bottom: 0;
-    }
-    .auth_body_section{
-        padding-bottom: 50px;
-    }
-    
-}
-@media (max-width: 1024px) {
-    .auth_body_main .login{
-        width: 80%;
-    }
-}
-@media (max-width: 992px) {
-    .auth_title_content{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .auth_body .auth_body_main{
-        flex-direction: column;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    .auth_body_main .login{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 767px) {
-    .auth_body .auth_body_main{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-@media (max-width: 576px) {
-    .auth_body .auth_body_main{
-        padding: 0;
-    }
-    .auth_body_section{
-        padding-top: 50px;
-        padding-bottom: 40px;
-    }
-    .auth_title_content{
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .auth__title_section .container .auth_title{
-        padding: 20px 0;
-    }
 }
 
 
@@ -1965,7 +1438,6 @@ body li{
     font-size: 40px;
     font-weight: 600;
     line-height: 85px;
-    height: 85px;
     width: 75px;
     text-align: center;
     background: rgb(248, 249, 248);
@@ -2104,36 +1576,967 @@ body li{
     background: #FEF8EF;
 }
 
-/*----------- About Responsive ----------*/
+
+/*===================== Cart Page design Start ===================*/
+.cart_body_main{
+    padding: 100px;
+}
+.cart_body_main .product_list table tbody tr{
+    height: 100px;
+    margin: auto;
+    line-height: 100px;
+}
+.cart_body_main .product_list table tbody tr td img{
+    max-height: 100px;
+}
+.cart_body_main .product_list table tbody tr td a, i, span, button{
+    margin-top: 40px;
+}
+.cart_body_main .product_list table tbody tr td a i{
+    color: #FE4A55;
+    font-size: 18px;
+}
+.cart_body_main .product_list table tbody tr td a,{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.cart_body_main .product_list table tbody tr td span{
+    padding: 10px 50px;
+    background: rgba(0, 0, 0, .05);
+    border-radius: 5px;
+}
+.cart_body_main .product_list table tbody tr td a:hover{
+    color: #FE4A55;
+}
+.cart_body_main .product_list table thead tr th{
+    font-size: 16px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    color: rgb(33, 37, 41);
+}
+.cart_body_main .promo_code button{
+    border: transparent;
+    outline: none;
+    background: #000000;
+    color: #fff;
+    font-size: 16;
+    font-weight: 700;
+    padding: 13px 25px;
+    position: absolute;
+    top: 0;
+    left: 29%;
+}
+.cart_body_main .promo_code button:hover{
+    background: #FE4A55;
+}
+.cart_body_main .promo_code{
+    position: relative;
+    margin-bottom: 50px;
+}
+.cart_body_main .promo_code input{
+    width: 30%;
+    height: 50px;
+    margin-top: 40px;
+    outline: none;
+    border: transparent;
+    background: rgba(0, 0, 0, .05);
+    border-radius: 5px;
+}
+.cart_body_main .promo_code input::placeholder{
+    padding-left: 15px;
+}
+.cart_body_main .promo_code input:focus{
+    border: 1px solid #FE4A55;
+}
+.cart_totals .cart_total_inner{
+    width: 550px;
+    margin: auto;
+    padding: 50px;
+}
+.cart_totals .cart_total_inner h3{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28.5px;
+    color: rgb(34, 22, 56);
+    margin-bottom: 25px;
+}
+.cart_totals .cart_total_inner table{
+    border: 1px solid #dfe0f4;
+    margin-bottom: 25px;
+}
+.cart_totals .cart_total_inner table tbody tr{
+    height: 30px !important;
+    line-height: 30px;
+    padding: 0 20px !important;
+}
+.cart_totals .cart_total_inner table tbody tr td{
+    text-align: right;
+}
+.cart_totals .cart_total_inner table tbody tr:last-child{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(34, 32, 56);
+}
+
+/*================= Checkout Page Design Start ===================*/
+.checkout_content .container .choeckout_content_main{
+    padding: 100px;
+    background: #fff;
+}
+.choeckout_content_main .checkout_header{
+    border-top: 3.5px solid #FE4A55;
+    padding: 12px;
+}
+.choeckout_content_main .checkout_header p{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -30px !important;
+    color: #FE4A55;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.choeckout_content_main .checkout_header a{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: rgb(34, 22, 56);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.choeckout_content_main .checkout_header a:hover{
+    color: #FE4A55;
+}
+.choeckout_content_main .checkout_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 4%;
+    margin-top: 50px;
+}
+.checkout_data .checkout_billing_details, .checkout_orders{
+    width: 48%;
+}
+.checkout_data .checkout_billing_details label{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    color: rgb(33, 37, 41);
+    margin-bottom: 8px;
+}
+.checkout_data .checkout_billing_details label span{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    color: rgb(255, 0, 0);   
+}
+.checkout_data .checkout_billing_details input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.checkout_data .checkout_billing_details select{
+    outline: none;
+    border-color: transparent;
+    padding: 15px;
+    width: 100%;
+    background: #F9F9F9;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(34, 22, 56);
+    margin-bottom: 20px;
+}
+.checkout_data .checkout_billing_details select:hover{
+    border: 1px solid #FE4A55;
+}
+ .choeckout_content_main .checkout_data h3{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28.5px;
+    color: rgb(34, 22, 56);
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+ }
+ .checkout_data .checkout_billing_details textarea{
+    height: 135px;
+    width: 100%;
+    background: #F9F9F9;
+    outline: none;
+    border-color: transparent;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+ }
+ .checkout_data .checkout_billing_details textarea:focus{
+    border: 1px solid #FE4A55;
+ }
+.checkout_billing_details .horizontal_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+}
+.horizontal_input div{
+    width: 48%;
+}
+.checkout_data .checkout_orders table tbody tr td{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    color: rgb(33, 37, 41);
+    padding: 15px 20px;
+}
+.checkout_data .checkout_orders .payment_method{
+    margin-top: 30px;
+    text-align: left;
+}
+.checkout_data .checkout_orders .payment_method input[type=radio]{
+    text-align: left;
+    display: inline-block !important;
+    margin-right: auto;
+    height: 15px;
+    width: 15px;
+}
+.checkout_data .checkout_orders .payment_method label{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: -18px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25.5px;
+    color: rgb(34, 22, 56);
+}
+
+
+/*==================== Responsive Start ==========================*/
+.modile_menu_section{
+    display: none;
+}
+@media (max-width: 1201px) {
+    .user_desktop{
+        display: none;
+    }
+    .user_mobile{
+        display: block;
+    }
+}
 @media (max-width: 1198px) {
+
+/*----- max-width: 1198px for home page -----------*/
+
+    .slider .container .slider_main{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .slider_main .slider_text{
+        width: 70% !important;
+        margin-top: 0 !important;
+    }
+    .slider_main .slider_user{
+        width: 100%;
+        justify-content: space-between !important;
+        column-gap: 4%;
+    }
+    .slider_main .slider_user .card{
+        width: 48% !important;
+    }
+    .slider_animation_round, .animation_red, .animation_red_borders, .animation_yellow, .animation_bordered, .self_yellow, .self_red_circle, .self_red_br, .plus_animation, .distance_dot_animate, .distance_border_animate, .top_red_animate, .botom_star, .certification_rb, .certification_yr, .certification_rr{
+        display: none;
+    }
+    .brand_logo .container .brand_logo_main{
+        padding-left: 100px;
+        padding-right: 100px;
+        column-gap: 3%;
+    }
+    .education_content .card_light {
+        padding: 30px 15px;
+    }
+    .education_content .card_light .education_icon{
+        font-size: 40px;
+        line-height: 1;
+    }
+    .education_content .card_light .education_inner_title h4{
+        font-size: 20px;
+    }
+    .sub_title {
+        font-size: 29px;
+        line-height: 34px;
+    }
+    .self_developmenr_inner .self_content{
+        padding: 30px;
+    }
+    .self_developmenr_inner .self_image{
+        width: 100% !important;
+    }
+    .attending_text{
+        padding: 50px 0 50px 100px;
+    }
+    .attending_image .attending_image_inner{
+        padding-right: 50px;
+    }
+
+/*------- max-width: 1198px for Login/Register page ----------*/
+
+    .auth_stra_animate{
+        display: none;
+    }
+    .auth_body .auth_body_main{
+        column-gap: 4%;
+    }
+    .auth_body_section{
+        padding: 80px 50px;
+    }
+    .auth_body_main .login{
+        width: 70%;
+    }
+
+/*--------- max-width: 1198px for About page --------------------*/
     .course_advisor .container .course_advisor_main{
         padding: 100px 50px;
     }
-}
-@media (max-width: 1100px) {
+
+/*--------- max-width: 1198px for checkout page --------------------*/
+    .checkout_content .container .choeckout_content_main{
+        padding: 100px 50px;
+    }
+
+/*--------- max-width: 1198px for contact page --------------------*/
+    .contact_star_animate{
+        display: none;
+    }
+    .contact_body .container .contact_main{
+        padding: 100px 50px;
+    }
+
+}    
+@media (max-width: 1114px) {
+    .header_main .manu_account .main_menu ul{
+        column-gap: 10px;
+    }
+    .search{
+        width: 200px;
+    }
+
+/*----------- max-width: 1114px for login/register page -----------*/
+    .auth_body_section{
+        padding: 80px 0;
+        margin-bottom: 0;
+    }
+    .auth_body_section{
+        padding-bottom: 50px;
+    } 
+/*----------- max-width: 1114px for About page -----------*/
+  
     .course_advisor .container .course_advisor_main{
         padding: 100px 0;
     }
+    
 }
 @media (max-width: 1024px) {
+
+/*-------- max-width: 1024px for cart Home page ----------*/
+
+    .education_main{
+        padding: 100px 50px !important;
+    }
+    .self_content{
+        padding: 20px 10px !important;
+    }
+    .top{
+        left: 93%;
+    }
+/*-------- max-width: 1024px for Login/Register page ----------*/
+
+    .auth_body_main .login{
+        width: 80%;
+    }
+/*-------- max-width: 1024px for About page ----------*/
+
     .course_advisor .container .course_advisor_main{
         padding: 100px;
     }
     .advisor_content .advisor0{
         display: none;
     }
+
+/*-------- max-width: 1024px for cart page ----------*/
+    .cart_body_main{
+        padding: 100px 50px !important;
+    }
+
+/*-------- max-width: 1024px for cart page ----------*/
+    .checkout_content .container .choeckout_content_main{
+        padding: 50px 0;
+    }
+
+/*-------- max-width: 1024px for Contract page ----------*/
+    .contact_body .container .contact_main{
+       padding: 100px 0; 
+    }
 }
+@media (max-width: 992px) {
+
+/* max-width: 992px for home page */
+
+    .header{
+        display: none;
+    }
+    .search_menu {
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+        padding: 20px 0;
+    }
+    .modile_menu_section{
+        width: 100% !important;
+        display: block;
+        padding: 15px 50px;
+        position: sticky !important;
+        top: 0;
+        z-index: 11;
+        background: #fff;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, .06);
+        margin: 0 !important;
+    }
+    .search{
+        width: 100%;
+    }
+    .modile_menu_section .container .mobile_menu_main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile_menu_main .mobile_icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 15px;
+    }
+    .user_btn_mobile{
+        font-size: 18px;
+        padding: 2px 8px;
+    }
+    .mobile_bag{
+        margin-top: -35px;
+    }
+    .mobile_icons .bar_icon i{
+        font-size: 30px;
+        color: rgba(0, 0, 0, .5);
+        cursor: pointer;
+    }
+    .mobile_icons .bar_icon{
+        margin-top: -35px;
+    }
+    .mobile_icons .mobile_bag{
+        position: relative;
+    }
+    .mobile_icons .mobile_bag a{
+        font-size: 22px;
+        line-height: 22px;
+        color: rgb(34, 22, 56);
+        transition: .4s;
+    }
+    .mobile_icons .mobile_bag a:hover{
+        color: #FE4A55;
+    }
+    .mobile_icons .mobile_bag p{
+        position: absolute;
+        font-size: 10px;
+        top: 30px;
+        right: -5px;
+        width: 12px;
+        height: 12px;
+        line-height: 12px;
+        text-align: center;
+        border-radius: 50%;
+        color: #ffffff;
+        background: #FE4A55;
+    }
+    .mobile_menu_search{
+        display: none;
+        padding-right: 5px;
+        border-top: 1px solid rgba(0, 0, 0, .5);
+        margin-top: 20px;
+        height: 570px;
+        overflow-y: auto;
+    }
+    .mobile_menu_search .mobile_search{
+        margin: 20px auto;
+    }
+    .mobile_menu_inner .mobile_menu_title a{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22px;
+        color: rgb(34, 22, 56);
+    }
+    .mobile_menu_inner .mobile_menu_body{
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+    .mobile_menu_inner .mobile_menu_body a{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        color: rgb(34, 22, 56);   
+    }
+    .mobile_menu_inner a{
+        transition: .4s;
+    }
+    .mobile_menu_inner a:hover{
+        color: #FE4A55;
+    }
+    .slider .container .slider_main{
+        text-align: center;
+    }
+    .slider_main .slider_user .slider_user_right{
+        margin-top: 50px !important;
+        margin-bottom: 0;
+    }
+    .slider_main .slider_user .slider_user_left{
+        margin-top: 50px !important;
+        margin-bottom: 100px;
+    }
+    .slider .container .slider_main .slider_text{
+        text-align: center;
+        margin: auto;
+        width: 100% !important;
+        padding-right: unset;
+    }
+    
+    .slider .container .slider_main .slider_text h2{
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .slider .container .slider_main .slider_text p{
+        font-size: 15px;
+        line-height: 27px;
+        margin: 15px auto;
+        max-width: unset;
+    }
+    .slider_user{
+        width: 100%;
+    }
+    .slider_text_main{
+        margin: auto !important;
+    }
+    .slider_text_main .slider_text_btnm{
+        margin: 10px auto !important;
+        text-align: center;
+    }
+    .brand_logo{
+        padding-top: 0;
+    }
+    .brand_logo .container .brand_logo_main{
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .slider_animation_doted{
+        display: none;
+    }
+    .slider_btn_red{
+        margin: auto;
+    }
+    .education_main .education_content{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .online_learning .container .online_main{
+        flex-direction: column;
+        width: 100% !important;
+        padding: 50px;
+    }
+    .online_main .online_img{
+        width: 100%;
+    }
+    .online_main .online_content{
+        width: 100%;
+        text-align: center;
+        margin: 25px auto;
+    }
+    .online_btn_red{
+        margin: auto;
+    }
+    .popular_crs_main .popular_crs_content{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .popular_inner_content{
+        width: 48%;
+        margin: auto;
+    }
+    .disnatce_main .distance_top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .disnatce_main .distance_top .distance_left{
+        width: 100%;
+    }
+    .disnatce_main .distance_top .distance_right{
+        width: 100%;
+    }
+    .self_main .self_developmenr_inner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .self_developmenr_inner .self_content{
+        padding: 50px !important;
+    }
+    .btn_red{
+        margin: auto;
+    }
+    .blog_content .blog_content_inner{
+        flex-wrap: wrap;
+        margin: auto;
+        row-gap: 20px;
+    }
+    .blog_content_inner .blog_inner_box{
+        width: 48%;
+        margin: auto;
+    }
+    .attending .container .attending_main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .attending_text{
+        width: 100%;
+        padding: 40px 40px 0 40px;
+    }
+    .attending_image .attending_image_inner{
+        position: unset;
+        width: 100%;
+    }
+    .footer_main .footer_top{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* max-width: 992px for Login/Register page */
+
+    .auth_title_content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .auth_body .auth_body_main{
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .auth_body_main .login{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+/* max-width: 992px for cart page */
+
+    .cart_body_main{
+        padding: 100px 0;
+    }
+
+/* max-width: 992px for Checkout page */
+    .checkout_content .container .choeckout_content_main{
+        padding: 50px 100px;
+    }
+    .choeckout_content_main .checkout_data{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .checkout_data .checkout_billing_details, .checkout_orders{
+        width: 100%;
+    }
+    .checkout_orders .checkout_btn{
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+/* max-width: 992px for Checkout page */
+    .contact_body .container .contact_main{
+        padding: 50px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .contact_main .contact_details{
+        width: 100%;
+    }
+    .contact_main .contact_form{
+        width: 100%;
+    }
+}
+
 @media (max-width: 800px) {
+    /* About Page */
     .course_advisor .container .course_advisor_main{
         padding: 50px;
     }
 }
+
+
 @media (max-width: 767px) {
+
+/*---------------- max-width: 767px for home page ---------------------*/
+    .top{
+        font-size: 18px;
+        padding: 7px 10px;
+        left: 91%;
+    }
+    .slider{
+        padding: 50px 0;
+    }
+    .slider .container .slider_main .slider_text{
+        width: 100% !important;
+        margin: 10px auto !important;
+    }
+    .slider .container .slider_main .slider_user{
+        flex-direction: column;
+        width: unset !important;
+    }
+    .slider_main .slider_user .slider_user_left{
+        margin-bottom: 50px;
+        margin: auto;
+        width: 100% !important;
+    }
+    .slider_main .slider_user .slider_user_right{
+        margin: auto;
+        width: 100% !important;
+    }
+    .brand_logo_main{
+        padding: 0 30px !important;
+    }
+    .education_main{
+        padding: 50px !important;
+    }
+    .popular_course .container .popular_crs_main{
+        padding: 50px !important;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .distance_right .distance_user .distance_user_left{
+        margin-top: 0;
+    }
+    .distance_right .distance_user .distance_user_right{
+        margin-bottom: 0;
+    }
+    .distance_bottom .videos{
+        width: 100%;
+        margin: 0 auto !important;
+    }
+    .distance_learning .container .disnatce_main{
+        padding: 50px;
+    }
+    .modal-content{
+        max-width: 100%;
+        height: 400px;
+    }
+    .blog_section .container .blog_main{
+        padding: 50px;
+    }
+    .attendng_text{
+        width: 100% !important;
+        padding-bottom: 100px;
+    }
+    .certification .container .certification_main{
+        padding: 50px;
+    }
+    .footer_main .footer_top{
+        padding: 50px;
+    }
+    .footer_main .footer_bottom{
+        flex-direction: column;
+    }
+    .blog_content .blog_content_inner{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .blog_content_inner .blog_inner_box{
+        width: 100%;
+    }
+
+/*----------- max-width: 767px for login/register page-----------------*/
+    .auth_body .auth_body_main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+/*----------- max-width: 767px for Abot page -----------------*/
+
     .course_advisor .container .course_advisor_main{
         padding: 50px 0;
     }
+/*----------- max-width: 767px for cart page -----------------*/
+
+    .cart_body_main {
+        padding: 50px 0 !important;
+    }
+    .product_list table .desktop_minus{
+        display: none;
+    }
+    .promo_code input{
+        width: 60% !important;
+    }
+    .promo_code button{
+        left: 59% !important;
+    }
+    .cart_body_main .product_list table thead tr th{
+        font-size: 14px;
+    }
+
+/*----------- max-width: 767px for Checkout page -----------------*/
+    .checkout_content .container .choeckout_content_main{
+        padding: 50px;
+    }
+    .checkout_billing_details .horizontal_input{
+        flex-direction: column;
+    }
+    .horizontal_input div{
+        width: 100%;
+    }
+
+/*----------- max-width: 767px for Contact page -----------------*/
+    .contact_main .contact_details{
+        text-align: center;
+    }
+    .contact_details_info .contact_inner_info{
+        flex-direction: column;
+    }
+    .contact_inner_info .inner_icon{
+        font-size: 30px;
+        width: 65px;
+        margin-top: 30px;
+    }
+    .contact_inner_info .inner_text h3{
+        font-size: 18px;
+    }
+    .contact_inner_info .inner_text p, a{
+        font-size: 14px;
+    }
+    .contact_main .contact_form p{
+        font-size: 14px;
+    }
+    .google_map .map{
+        height: 400px;
+    }
 }
 @media (max-width: 576px) {
+/*--------------- max-width: 567px for home page -----------*/
+
+    .modile_menu_section{
+        padding: 20px 0;
+    }
+    .slider{
+        padding: 30px 0 !important;
+    }
+    .slider .container .slider_main{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slider_user .slider_user_right{
+        margin-bottom: 0 !important;
+    }
+    .slider .container .slider_main .slider_text{
+        width: 100%;
+    }
+    .brand_logo .container .brand_logo_main{
+        padding: 20px 0 !important;
+        row-gap: 15px;
+        column-gap: 50px;
+    }
+    .brand_logo{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .education_main{
+        padding: 40px 0 !important;
+    }
+    .education_main .education_content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .online_learning .container .online_main{
+        padding: 40px 0 !important;
+    }
+    .sub_title{
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0 !important;
+    }
+    .small_title{
+        font-size: 12.5px;
+        line-height: 18.5px;
+    }
+    .paragraph{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .online_inner_btns{
+        flex-direction: column;
+        text-align: center;
+    }
+    .popular_course .container .popular_crs_main{
+        padding: 40px 0 !important;
+    }
+    .distance_learning .container .disnatce_main{
+        padding: 40px 0 !important;
+    }
+    .distance_right .distance_user{
+        flex-direction: column;
+    }
+    .distance_right .distance_user .distance_user_left{
+        width: 100%;
+    }
+    .user_box {
+        width: 100%;
+        height: 150px;
+        padding-top: 26px;
+    }
+    .distance_right .distance_user .distance_user_right{
+        width: 100%;
+    }
+    .self_development .container .self_main{
+        padding: 0;
+    }
+    .self_developmenr_inner .self_content{
+        padding: 40px 20px !important;
+    }
+    .blog_section .container .blog_main{
+        padding: 40px 0 !important;
+    }
+    .attending_text{
+        padding: 40px 0 0 0;
+    }
+    .certification .container .certification_main{
+        padding: 40px 0 !important;
+    }
+    .footer_main .footer_top{
+        padding: 40px 0 !important;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer_top .footer_top_explore{
+        padding-left: 0;
+    }
+
+/*--------------- max-width: 567px for Checkout page -----------*/
+    .checkout_content .container .choeckout_content_main{
+        padding: 50px 0;
+    }
+
+/*--------------- max-width: 567px for Login/register page -----------*/
+    .auth_body .auth_body_main{
+        padding: 0;
+    }
+    .auth_body_section{
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .auth_title_content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .auth__title_section .container .auth_title{
+        padding: 20px 0;
+    }
+/*--------------- max-width: 567px for About page -----------*/
+
     .advisor_inner_content{
         flex-direction: column;
     }
@@ -2145,5 +2548,17 @@ body li{
     .advisor_inner_content .avisor_text{
         width: 100%;
         margin: auto;
+    }
+/*--------------- max-width: 567px for cart page -----------*/
+    .cart_body_main .product_list table tbody tr td img{
+        max-width: 60px;
+    }
+
+/*----------- max-width: 567px for Contact page -----------------*/
+    .contact_body .container .contact_main{
+        padding: 50px 0;
+    }
+    con.contact_main .tact_form h2{
+        font-size: 24px;
     }
 }
