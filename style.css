@@ -21,7 +21,7 @@ html{
     width: 100%;
     max-width: 1470px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 image{
     max-width: 100%;
@@ -210,7 +210,7 @@ body{
 .user_btn{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center ;
 }
 .user_btn_inner i{
     color: #fe4a55;
@@ -927,6 +927,10 @@ body{
     overflow: hidden;
     transition: 9s !important;
 }
+.blog_inner_box .user_info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .blog_inner_box .blog_img_main{
     overflow: hidden;
     margin-bottom: 20px;
@@ -948,11 +952,15 @@ body{
 .blog_inner_box .user_info .user_text h6 a:hover{
     color: #FE4A55;
 }
+.user_btn{
+    margin-top: -15px;
+}
 .user_info .user_btn .user_inner_info{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 10px;
+    margin-bottom: -40px;
 }
 .user_info .user_btn .user_inner_info .user_name h6{
     color: #FE4A55;
@@ -1069,13 +1077,13 @@ body{
 /*----------------------- Footer Section -----------------------------*/
 @keyframes footerLeft {
     0%{left: 24%; top: 0;}
-    100%{left: 24%; top: 100%; }
+    100%{left: 24%; top: 100%; display: none; }
 }
 .footer_left_animation{
     position: absolute;
     top: -50px;
     width: 2px;
-    height: 50px;
+    height: 30px;
     background: rgba(255, 255, 255, .8);
     animation-name: footerLeft;
     animation-delay: 1s;
@@ -1084,14 +1092,14 @@ body{
 }
 @keyframes footerMiddle {
     0%{left: 50%; top: 0;}
-    100%{left: 50%; top: 100%;}
+    100%{left: 50%; top: 100%; display: none;}
 }
 .footer_middle_animation{
     position: absolute;
     left: 50%;
     top: -50px;
     width: 2px;
-    height: 50px;
+    height: 30px;
     background: rgba(255, 255, 255, .8);
     animation-name: footerMiddle;
     animation-delay: 2s;
@@ -1100,14 +1108,14 @@ body{
 }
 @keyframes footerRight {
     0%{right: 23%; top: 0;}
-    100%{right: 23%; top: 100%;}
+    100%{right: 23%; top: 100%; display: none;}
 }
 .footer_right_animation{
     position: absolute;
     right: 22%;
     top: -50px;
     width: 2px;
-    height: 50px;
+    height: 30px;
     background: rgba(255, 255, 255, .8);
     animation-name: footerRight;
     animation-delay: 3s;
@@ -1811,6 +1819,49 @@ body{
 }
 
 
+/*================= Blog Page Design Start =======================*/
+.blog_body_main .blog_body{
+    padding: 50px 100px;
+}
+.blog_body .blog_body_inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 22px;
+    border-bottom: 1px solid transparent;
+}
+.blog_body_inner .blog_body_box{
+    background: #FFFAF3;
+    border-radius: 5px;
+}
+.blog_body .blog_paginate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.blog_body .blog_paginate a{
+    background: rgba(0, 0, 0, .04);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 33px;
+    color: rgb(96, 96, 96);
+    width: 35px;
+    height: 33px;
+    text-align: center;
+    border-radius: 3px;
+}
+.blog_body .blog_paginate a:nth-child(2){
+    background: #FE4A55;
+    color: #fff;
+}
+.blog_body .blog_paginate a:hover{
+    background: #FE4A55;
+    color: #fff;
+}
+
+
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
     display: none;
@@ -1913,6 +1964,10 @@ body{
         padding: 100px 50px;
     }
 
+/*--------- max-width: 1198px for Blog page --------------------*/
+    .auth_stra_animate{
+        display: none;
+    }
 }    
 @media (max-width: 1114px) {
     .header_main .manu_account .main_menu ul{
@@ -1936,6 +1991,16 @@ body{
         padding: 100px 0;
     }
     
+/*----------- max-width: 1114px for Blog page -----------*/
+    .blog_body_main .blog_body{
+        padding: 50px;
+    }
+    .title_h4 a{
+        font-size: 18px;
+    }
+    .blog_inner_box .user_info .user_text h6 a {
+        font-size: 13px;
+    }
 }
 @media (max-width: 1024px) {
 
@@ -1977,6 +2042,11 @@ body{
 /*-------- max-width: 1024px for Contract page ----------*/
     .contact_body .container .contact_main{
        padding: 100px 0; 
+    }
+
+ /*-------- max-width: 1024px for blog page ----------*/   
+    .blog_body_main .blog_body{
+        padding: 50px 0;
     }
 }
 @media (max-width: 992px) {
@@ -2262,6 +2332,18 @@ body{
     .contact_main .contact_form{
         width: 100%;
     }
+
+/* max-width: 992px for Blog page */
+    .blog_body .blog_body_inner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .blog_body_inner .blog_body_box{
+        width: 100%;
+    }
+    .blog_body_main .blog_body{
+        padding: 50px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -2416,6 +2498,12 @@ body{
     .google_map .map{
         height: 400px;
     }
+
+/*----------- max-width: 767px for Blog page -----------------*/
+    .blog_body .blog_body_inner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
 }
 @media (max-width: 576px) {
 /*--------------- max-width: 567px for home page -----------*/
@@ -2560,5 +2648,21 @@ body{
     }
     con.contact_main .tact_form h2{
         font-size: 24px;
+    }
+
+/*----------- max-width: 567px for Blog page -----------------*/
+   .blog_body_main .blog_body{
+        padding: 50px 0;
+    }
+
+    .footer_top .footer_top_about{
+        margin-bottom: -50px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .footer_bottom{
+        padding: 20px 0;
     }
 }
