@@ -2227,6 +2227,10 @@ body{
     column-gap: 10px;
     width: 100%;
 }
+.blog_comments_submit .btn_red{
+    outline: none;
+    border-color: transparent;
+}
 
 /*-------- Blog details rightside sidebar ---------*/
 .blog_sidebar .bolg_sidebar_search .serach_bar form input{
@@ -2238,6 +2242,9 @@ body{
     margin-bottom: 20px;
     padding-bottom: 10px;
     position: relative;
+}
+.bolg_sidebar_search .serach_bar form i{
+    margin-top: 55px;
 }
 .blog_sidebar h4 .red_border{
     position: absolute;
@@ -2259,7 +2266,7 @@ body{
 }
 .bolg_sidebar_posts .sidebar_post_inner .sidebar_post_image img{
     width: 120px;
-    height: 70px;
+    height: 65px;
     border-radius: 5px;
 }
 .bolg_sidebar_posts .sidebar_post_inner .sidebar_post_text p{
@@ -2425,6 +2432,17 @@ body{
     .auth_stra_animate{
         display: none;
     }
+
+/*--------- max-width: 1198px for Blog Details page --------------------*/
+    .bolg_sidebar_posts .sidebar_post_inner .sidebar_post_image img{
+        height: 50px;
+    }
+    .blog_top_users .border_left{
+        font-size: 18px;
+    }
+    .blog_content_travels .blog_travel_middle .blog_profile_image {
+        margin-top: 75px;
+    }
 }    
 @media (max-width: 1114px) {
     .header_main .manu_account .main_menu ul{
@@ -2457,6 +2475,20 @@ body{
     }
     .blog_inner_box .user_info .user_text h6 a {
         font-size: 13px;
+    }
+
+/*----------- max-width: 1114px for Blog Details page -----------*/
+    .blog_body_inner .blog_submit_comments .commenter_checkbox{
+        column-gap: 5px;
+    }
+    .commenter_checkbox .label_bd label{
+        font-size: 14px;
+    }
+    .blog_content_travels .blog_travel_bottom h4 {
+        font-size: 15px;
+    }
+    .blog_body_section .container .blog_body_main{
+        padding: 100px 50px;
     }
 }
 @media (max-width: 1024px) {
@@ -2503,6 +2535,11 @@ body{
 
  /*-------- max-width: 1024px for blog page ----------*/   
     .blog_body_main .blog_body{
+        padding: 50px 0;
+    }
+
+ /*-------- max-width: 1024px for blog Details page ----------*/   
+    .blog_body_section .container .blog_body_main{
         padding: 50px 0;
     }
 }
@@ -2801,6 +2838,29 @@ body{
     .blog_body_main .blog_body{
         padding: 50px;
     }
+
+/* max-width: 992px for Blog Details page */
+    .blog_body_section .container .blog_body_main{
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+    .blog_body_main .blog_sidebar{
+        width: 100%;
+    }
+    .blog_body_main .blog_content{
+        width: 100%;
+    }
+    .blog_content_travels .blog_travel_middle .blog_profile_image{
+        margin-top: 100px;
+    }
+    .blog_submit_comments .blog_comments_submit .btn_red{
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+    .bolg_sidebar_posts .sidebar_post_inner .sidebar_post_image img{
+        width: 100px;
+        height: unset;
+    }
 }
 
 @media (max-width: 800px) {
@@ -2961,9 +3021,46 @@ body{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
     }
+
+/*----------- max-width: 767px for Blog Details page -----------------*/
+    .blog_body_section .container .blog_body_main{
+        padding: 50px;
+    }
+    .blog_user_count .blog_user_content a{
+        font-size: 15px;
+    }
+    .blog_body_main .blog_titles{
+        font-size: 19px;
+    }
+    .paragraph{
+        font-size: 14.5px;
+    }
+    .blog_content_travels .blog_travel_middle .blog_profile_image {
+        margin-top: 75px;
+    }
+    .blog_content_travels .blog_travel_bottom{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .blog_content_travels .blog_travel_bottom .travel_bottom_left{
+        width: 100%;
+    }
+    .blog_travel_bottom .travel_bottom_image img{
+        width: 100px;
+    }
+    .blog_content_travels .blog_travel_bottom .travel_bottom_right{
+        width: 100%;
+    }
+    .blog_body_inner .blog_submit_comments .horizontal_input{
+        flex-direction: column;
+    }
 }
+
 @media (max-width: 576px) {
 /*--------------- max-width: 567px for home page -----------*/
+    .container{
+        padding: 0 12px;
+    }
 
     .modile_menu_section{
         padding: 20px 0;
@@ -3103,7 +3200,7 @@ body{
     .contact_body .container .contact_main{
         padding: 50px 0;
     }
-    con.contact_main .tact_form h2{
+    .contact_main .contact_form h2{
         font-size: 24px;
     }
 
@@ -3115,6 +3212,18 @@ body{
     .footer_top .footer_top_about{
         margin-bottom: -50px;
     }
+
+/*----------- max-width: 567px for Blog Details page -----------------*/
+    .blog_body_section .container .blog_body_main{
+        padding: 50px 0;
+    }
+    .blog_top_users .border_left{
+        padding: 15px;
+        font-size: 16px;
+    }
+    .blog_content_travels .blog_travel_middle .blog_profile_image{
+        margin-top: 60px;
+    }
 }
 
 
@@ -3122,4 +3231,22 @@ body{
     .footer_bottom{
         padding: 20px 0;
     }
-}
+
+/*----------- max-width: 440px for Blog Details page -----------------*/
+    .blog_content_travels .blog_travel_top{
+        flex-direction: column;
+
+    }
+    .blog_content_travels .blog_travel_top .blog_content_social{
+        margin-top: 15px;
+    }
+    .commenter_checkbox .label_bd label{
+        font-size: 10px;
+    }
+    .blog_content_travels .blog_travel_middle .blog_profile_image{
+        margin-top: 40px;
+    }
+    .blog_content_top .blog_top_users .top_user_count_main{
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
