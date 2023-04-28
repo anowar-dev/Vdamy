@@ -239,6 +239,34 @@ body{
     50%{left: 125px; top: 0;}
     100%{left: 100px; top: 0;}
 }
+.paginate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    margin: 30px auto;
+}
+.paginate a{
+    background: rgba(0, 0, 0, .04);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 33px;
+    color: rgb(96, 96, 96);
+    width: 35px;
+    height: 33px;
+    text-align: center;
+    border-radius: 3px;
+}
+.paginate a:nth-child(2){
+    background: #FE4A55;
+    color: #fff;
+}
+.paginate a:hover{
+    background: #FE4A55;
+    color: #fff;
+}
+
+
 /*----------- Header section ----------*/
 .header{
     background: #fff;
@@ -1841,33 +1869,6 @@ body{
     background: #FFFAF3;
     border-radius: 5px;
 }
-.blog_body .blog_paginate{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 8px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.blog_body .blog_paginate a{
-    background: rgba(0, 0, 0, .04);
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 33px;
-    color: rgb(96, 96, 96);
-    width: 35px;
-    height: 33px;
-    text-align: center;
-    border-radius: 3px;
-}
-.blog_body .blog_paginate a:nth-child(2){
-    background: #FE4A55;
-    color: #fff;
-}
-.blog_body .blog_paginate a:hover{
-    background: #FE4A55;
-    color: #fff;
-}
 
 /*=============== Blog Details page design start ==================*/
 .blog_body_section .container .blog_body_main{
@@ -1881,7 +1882,7 @@ body{
 .blog_body_main .blog_sidebar{
     width: 30%;
 }
-.blog_body_main .blog_content{
+.blog_body_main .blog_contents{
     width: 66%;
 }
 
@@ -2325,6 +2326,51 @@ body{
     background: #FE4A55;
 }
 
+/*================== Course Page Design Start ==================*/
+.course_body_section .container .course_body_main{
+    padding: 100px;
+    background: #fff;
+}
+.course_body_main .course_body_inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+}
+.course_body_main .course_sub_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.course_body_main .course_sub_title .course_filter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5px;
+}
+.course_body_main .course_sub_title .course_filter h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(171, 171, 171);
+}
+.course_sub_title .course_filter form select{
+    padding: 12px;
+    background: rgba(0, 0, 0, .04);
+    outline: none;
+    border-color: transparent;
+    border-radius: 5px;
+    width: 220px;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(34, 22, 56);
+}
+.course_sub_title .course_filter form select:hover{
+    border: 1px solid #FE4A55;
+}
+
 
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
@@ -2443,6 +2489,11 @@ body{
     .blog_content_travels .blog_travel_middle .blog_profile_image {
         margin-top: 75px;
     }
+
+/*--------- max-width: 1198px for Course page --------------------*/
+    .course_body_section .container .course_body_main{
+        padding: 100px 50px;
+    }
 }    
 @media (max-width: 1114px) {
     .header_main .manu_account .main_menu ul{
@@ -2541,6 +2592,11 @@ body{
  /*-------- max-width: 1024px for blog Details page ----------*/   
     .blog_body_section .container .blog_body_main{
         padding: 50px 0;
+    }
+
+ /*-------- max-width: 1024px for course page ----------*/   
+    .course_body_section .container .course_body_main{
+        padding: 100px 0;
     }
 }
 @media (max-width: 992px) {
@@ -2847,7 +2903,7 @@ body{
     .blog_body_main .blog_sidebar{
         width: 100%;
     }
-    .blog_body_main .blog_content{
+    .blog_body_main .blog_contents{
         width: 100%;
     }
     .blog_content_travels .blog_travel_middle .blog_profile_image{
@@ -2861,12 +2917,30 @@ body{
         width: 100px;
         height: unset;
     }
+
+/* max-width: 992px for course page */
+    .course_body_section .container .course_body_main{
+        padding: 100px;
+    }
+    .course_body_main .course_body_inner{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .course_body_main .course_body_inner .popular_inner_content{
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
     /* About Page */
     .course_advisor .container .course_advisor_main{
         padding: 50px;
+    }
+    .course_body_section .container .course_body_main{
+        padding: 100px 50px;
+    }
+    .course_body_main .course_sub_title {
+        margin-bottom: 30px;
     }
 }
 
@@ -3054,6 +3128,17 @@ body{
     .blog_body_inner .blog_submit_comments .horizontal_input{
         flex-direction: column;
     }
+
+/*----------- max-width: 767px for Course page -----------------*/
+    .course_body_section .container .course_body_main{
+        padding: 50px;
+    }
+    .course_body_main .course_body_inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course_body_main .course_sub_title{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 576px) {
@@ -3224,6 +3309,11 @@ body{
     .blog_content_travels .blog_travel_middle .blog_profile_image{
         margin-top: 60px;
     }
+
+/*----------- max-width: 567px for Course page -----------------*/
+    .course_body_section .container .course_body_main{
+        padding: 50px 0;
+    }
 }
 
 
@@ -3250,3 +3340,4 @@ body{
         flex-wrap: wrap;
         row-gap: 0;
     }
+}
