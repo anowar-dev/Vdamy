@@ -1749,7 +1749,7 @@ body{
 .cart_body_main .product_list table tbody tr td a{
     font-size: 24px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
 }
 .cart_body_main .product_list table tbody tr td span{
     padding: 10px 50px;
@@ -2472,6 +2472,9 @@ body{
     font-size: 16px;
     font-weight: 700;
     color: rgb(34, 22, 56);
+}
+.popular_inner_content .user_info .user_btn .user_btn_left{
+    margin-top: -20px;
 }
 .course_sub_title .course_filter form select:hover{
     border: 1px solid #FE4A55;
@@ -3438,6 +3441,12 @@ body{
     .cart_body_main{
         padding: 100px 0;
     }
+    .cart_body_main .product_list table tbody tr td a {
+        font-size: 22px;
+    }
+    .cart_body_main .product_list table tbody tr td span {
+        padding: 7px 30px;
+    }
 
 /* max-width: 992px for Checkout page */
     .checkout_content .container .choeckout_content_main{
@@ -3455,7 +3464,7 @@ body{
         margin-top: 20px;
     }
 
-/* max-width: 992px for Checkout page */
+/* max-width: 992px for Contact page */
     .contact_body .container .contact_main{
         padding: 50px;
         flex-direction: column;
@@ -3580,6 +3589,8 @@ body{
     .course_advisor .container .course_advisor_main{
         padding: 50px;
     }
+
+    /* Course details page */
     .course_body_section .container .course_body_main{
         padding: 50px;
     }
@@ -3588,6 +3599,11 @@ body{
     }
     .details_review_persone .review_persone_image img {
         width: 200px;
+    }
+
+    /* Cart Page */
+    .cart_body_main .product_list table tbody tr td img {
+        max-height: 80px;
     }
 }
 
@@ -3651,6 +3667,14 @@ body{
     }
     .blog_section .container .blog_main{
         padding: 50px;
+    }
+    .image_inner_icon button i {
+        top: 35%;
+        left: 44%;
+        font-size: 35px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
     }
     .attendng_text{
         width: 100% !important;
@@ -3978,6 +4002,14 @@ body{
     .blog_section .container .blog_main{
         padding: 40px 0 !important;
     }
+    .image_inner_icon button i {
+        top: 34%;
+        left: 43%;
+        font-size: 30px;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+    }
     .attending_text{
         padding: 40px 0 0 0;
     }
@@ -3990,6 +4022,37 @@ body{
     }
     .footer_top .footer_top_explore{
         padding-left: 0;
+    }
+    .footer_social {
+        margin-top: -40px;
+    }
+    .footer_top h4{
+        margin-top: 80px;
+    }
+    .footer_top_resource{
+        margin-top: -50px;
+    }
+    .footer_top_address{
+        margin-top: -50px;
+    }
+    /*---- Cart page ----------*/
+    .cart_body_main .product_list table tbody tr td img {
+        max-height: 50px;
+    }
+    .cart_body_main .product_list table tbody tr td a {
+        font-size: 16px;
+    }
+    .cart_body_main .product_list table tbody tr td span {
+        padding: 5px 20px;
+    }
+    .cart_body_main .promo_code button {
+        padding: 13px 20px;
+    }
+    .promo_code input {
+        width: 50% !important;
+    }
+    .promo_code button {
+        left: 48% !important;
     }
 
 /*--------------- max-width: 567px for Checkout page -----------*/
@@ -4011,6 +4074,16 @@ body{
     }
     .auth__title_section .container .auth_title{
         padding: 20px 0;
+    }
+    .auth_body_main .login {
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .check_text .check{
+        font-size: 14px;
+    }
+    .check_line a{
+        font-size: 14px;
     }
 /*--------------- max-width: 567px for About page -----------*/
 
@@ -4062,6 +4135,9 @@ body{
     }
     .blog_content_travels .blog_travel_middle .blog_profile_image{
         margin-top: 60px;
+    }
+    .blog_travel_bottom .travel_bottom_image img {
+        width: 120px;
     }
 
 /*----------- max-width: 567px for Course page -----------------*/
@@ -4117,7 +4193,7 @@ body{
         font-size: 10px;
     }
     .blog_content_travels .blog_travel_middle .blog_profile_image{
-        margin-top: 40px;
+        margin-top: 80px;
     }
     .blog_content_top .blog_top_users .top_user_count_main{
         flex-wrap: wrap;
@@ -4136,7 +4212,25 @@ body{
     .btn_share_icons {
         left: 30%;
     }
+
+    /*---- Cart Page ------*/
+    .cart_body_main .promo_code button {
+        padding: 10px 15px;
+    }
+    .cart_body_main .promo_code input{
+        height: 45px;
+    }
 }
 
+@media (max-width: 360px) {
+    .course_details_video_img button h3 {
+        left: 90px;
+        top: 140px;
+    }
+    .course_details_video_img button i {
+        left: 130px;
+        top: 40px;
+    }
+}
 
 
