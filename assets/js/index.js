@@ -22,3 +22,35 @@ function scrollFunction() {
   }
 }
 
+//================== Owl Carousel for About bottom Js=================
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav:  false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:1
+    },
+    1000:{
+      items:2
+    }
+  }
+})
+
+
+//================== Slick Slider Js=================
+
+$(document).ready(function(){
+  $('.single-item').slick({
+    autoplay: true,
+    autoplayTimeout: 2000,
+    dots: true,
+    infinite: true,
+  });
+});

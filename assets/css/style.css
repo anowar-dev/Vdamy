@@ -430,7 +430,7 @@ body{
 /*------------------ Slider Section --------------------*/
 .slider{
     padding-top: 100px;
-    background: url(img/background/gray-bg.75dceb4f.jpg) no-repeat;
+    background: url(../bgUrlPhoto/gray-bg.75dceb4f.jpg) no-repeat;
     background-size: cover;
     position: relative;
     background-position: 100% 100%;
@@ -731,7 +731,7 @@ body{
 
 /*--------------- Distance Learning ---------------------*/
 .distance_learning{
-    background: url(img/background/white-bg.47023305.jpg) no-repeat center;
+    background: url(../bgUrlPhoto/white-bg.47023305.jpg) no-repeat center;
     background-size: cover;
 }
 .distance_learning .container .disnatce_main{
@@ -785,6 +785,8 @@ body{
 }
 .disnatce_main .distance_top .distance_right{
     width: 49%;
+    z-index: 1;
+    background: #F6F1ED;
 }
 .distance_right .distance_user{
     display: flex;
@@ -1651,23 +1653,18 @@ body{
     max-width: 575px;
     margin-bottom: 50px;
 }
-.carousel-item .advisor_content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 4%;
-}
 .advisor_content .advisor_inner_content{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 0;
 }
-.advisor_inner_content .avisor_image{
-    width: 32%;
+.advisor_inner_content .avisor_image img{
+    width: 40%;
+    border-radius: 5px;
 }
 .advisor_inner_content .avisor_text{
-    width: 67%;
+    width: 60%;
 }
 .social .social_inner a i{
     background: rgba(0, 0, 0, .1);
@@ -1678,6 +1675,12 @@ body{
 }
 .about_access{
     background: #FEF8EF;
+}
+.advisor_inner_content .avisor_image img{
+    width: 100%;
+}
+.advisor_inner_content .avisor_text h4{
+    margin-top: 0;
 }
 
 
@@ -1700,7 +1703,7 @@ body{
     color: #FE4A55;
     font-size: 18px;
 }
-.cart_body_main .product_list table tbody tr td a,{
+.cart_body_main .product_list table tbody tr td a{
     font-size: 24px;
     font-weight: 700;
     color: #fff;
@@ -2100,7 +2103,7 @@ body{
     border: 1px solid #c13584;
 }
 .blog_content_travels .blog_travel_middle{
-    background: url(img/background/bg.green.jpg) no-repeat center;
+    background: url(../bgUrlPhoto/bg.green.jpg) no-repeat center !important;
     background-size: contain;
     background-position: top !important;
     border-radius: 5px 5px 0 0;
@@ -3083,10 +3086,16 @@ body{
 /*-------- max-width: 1024px for About page ----------*/
 
     .course_advisor .container .course_advisor_main{
-        padding: 100px;
+        padding: 50px;
     }
-    .advisor_content .advisor0{
-        display: none;
+    .advisor_inner_content .avisor_image{
+        width: 48%;
+    }
+    .advisor_inner_content .avisor_text{
+        width: 52%;
+    }
+    .education_main {
+    padding: 0 50px 100px 50px;
     }
 
 /*-------- max-width: 1024px for cart page ----------*/
@@ -3116,7 +3125,7 @@ body{
 
  /*-------- max-width: 1024px for course page ----------*/   
     .course_body_section .container .course_body_main{
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
  /*-------- max-width: 1024px for course Details page ----------*/   
@@ -3447,7 +3456,7 @@ body{
 
 /* max-width: 992px for course page */
     .course_body_section .container .course_body_main{
-        padding: 100px;
+        padding: 50px 100px;
     }
     .course_body_main .course_body_inner{
         grid-template-columns: repeat(2, 1fr);
@@ -3484,6 +3493,18 @@ body{
     .btn_share_icons {
         left: 35%;
     }
+
+    /* About Page */
+    .brand_logo .container .brand_logo_main {
+    margin-top: 40px;
+    margin-bottom: -30px;
+    }
+    .advisor_inner_content .avisor_image{
+        width: 30%;
+    }    
+    .advisor_inner_content .avisor_text{
+        width: 70%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -3492,7 +3513,7 @@ body{
         padding: 50px;
     }
     .course_body_section .container .course_body_main{
-        padding: 100px 50px;
+        padding: 50px;
     }
     .course_body_main .course_sub_title {
         margin-bottom: 30px;
@@ -3599,6 +3620,12 @@ body{
         padding-left: 50px;
         padding-right: 50px;
     }
+    .auth_body_main .register {
+    padding-top: 20px;
+    }
+    .auth_body_section {
+    padding-bottom: 0;
+    }
 /*----------- max-width: 767px for Abot page -----------------*/
 
     .course_advisor .container .course_advisor_main{
@@ -3670,6 +3697,9 @@ body{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
     }
+    .blog_body_main .blog_body {
+    padding: 0 50px 25px 50px;
+    }
 
 /*----------- max-width: 767px for Blog Details page -----------------*/
     .blog_body_section .container .blog_body_main{
@@ -3702,6 +3732,9 @@ body{
     }
     .blog_body_inner .blog_submit_comments .horizontal_input{
         flex-direction: column;
+    }
+    .blog_view_comments .blog_commenter_info .blog_commenter_image {
+    width: 100px;
     }
 
 /*----------- max-width: 767px for Course page -----------------*/
@@ -3934,8 +3967,8 @@ body{
     }
 
 /*----------- max-width: 567px for Blog page -----------------*/
-   .blog_body_main .blog_body{
-        padding: 50px 0;
+    .blog_body_main .blog_body {
+    padding: 0 0 25px 0;
     }
 
     .footer_top .footer_top_about{
@@ -4024,4 +4057,5 @@ body{
         left: 30%;
     }
 }
+
 
