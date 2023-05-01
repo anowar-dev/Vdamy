@@ -54,3 +54,18 @@ $(document).ready(function(){
     infinite: true,
   });
 });
+
+
+//============= Inner Video===============
+var btn = document.getElementById("preview");
+var popUp = document.getElementById("video_popup");
+
+var close = document.getElementsByClassName("video_close")[0];
+
+  btn.onclick = function(){
+    popUp.style.display = "block";
+  }
+
+  close.onclick = function(){
+    popUp.style.display = "none";
+  }
