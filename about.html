@@ -460,12 +460,12 @@
                             <img src="img/background/border-round.png" alt="">
                         </div>
                         <div class="image_inner_icon">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#video_modal">
+                            <button id="popup_open_btn" type="button" data-src="https://www.youtube.com/embed/bk7McNUjWgw" data-bs-toggle="modal" data-bs-target="#video_modal">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                                 
                         </div>
-                        <!-- ------ Modal ----- -->
+                        <!-------- Modal ------->
                         <div class="modal fade" id="video_modal">
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                 <div class="modal-content">
@@ -474,7 +474,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">&times;</button>
                                     </div>
                                     <div class="modal-body">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bk7McNUjWgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe id="iframID" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>

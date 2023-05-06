@@ -79,49 +79,6 @@ body{
 }
 
 /*================= Globel css ===================*/
-/*=========== Video Player Design =================*/
-.video_player{
-    background: rgba(0, 0, 0, .1);
-    position: fixed;
-    top: 120px;
-    left: 20%;
-    width: 800px;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 111;
-    display: none;
-    
-    border-radius: 5px;
-    height: 500px;
-    text-align: center;
-}
-.video_player .video_player_header{
-    background: #00acee;
-    width: 100%;
-    height: 50px;
-    margin: auto;
-    position: relative;
-    border-radius: 5px 5px 0 0;
-}
-.video_player .video_player_header .video_close{
-    position: absolute;
-    top: -32px;
-    right: 10px;
-    cursor: pointer;
-}
-.video_player .video_player_header .video_close i{
-    font-size: 20px;
-    color: #000;
-    background: white;
-    padding: 6px 8px;
-    border-radius: 5px;
-}
-.video_player .video_player_body iframe{
-    height: 450px;
-    border-radius: 0 0 5px 5px;
-}
 /* Btn Red */
 .btn_red{
     width: fit-content;
@@ -2782,7 +2739,6 @@ body{
 
 /*------------- Course Details Sidebar -----------*/
 .course_details_sidebar{
-    z-index: 1;
     margin-top: -265px;
 }
 .course_details_video_img button{
@@ -3902,7 +3858,7 @@ body{
 
 @media (max-width: 735px) {
     .video_player{
-        left: 0;
+        left: 1%;
     }
 }
 
