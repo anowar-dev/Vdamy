@@ -2869,6 +2869,58 @@ body{
 }
 
 
+/*=========== video section design start ================*/
+.video_body_section{
+    padding: 100px 0;
+}
+.video_main{
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/*=============== videoDetails Design here ============*/
+.videoDetails_body_section .container .video_body_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 4%;
+    background: #fff;
+    padding: 100px;
+}
+.vodeoDetailsPlayer{
+    width: 100%;
+    height: 460px;
+}
+.video_body_main .videoTitle {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 800;
+    color: rgb(34, 22, 56);
+}
+.sidebarVideoContent{
+    width: 120px;
+    height: 70px;
+    border-radius: 5px;
+}
+.sidebarVideos {
+    position: relative;
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 800;
+    color: rgb(34, 22, 56);
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+.red_borderSidebar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 1px;
+    background: #fe4a55;
+}
+
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
     display: none;
