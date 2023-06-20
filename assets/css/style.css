@@ -77,6 +77,11 @@ body{
 .shoping_bag i{
     font-weight: 600;
 }
+.blog_comments_submit button{
+    border-color: transparent;
+    outline: none;
+    border: 0;
+}
 
 /*================= Globel css ===================*/
 /* Btn Red */
@@ -2887,9 +2892,16 @@ body{
     background: #fff;
     padding: 100px;
 }
+.videoContent{
+    width: 70%;
+}
+.videoSidebar{
+    width: 28%;
+}
 .vodeoDetailsPlayer{
     width: 100%;
-    height: 460px;
+    height: 450px;
+    border-radius: 5px;
 }
 .video_body_main .videoTitle {
     font-size: 24px;
@@ -2899,7 +2911,7 @@ body{
 }
 .sidebarVideoContent{
     width: 120px;
-    height: 70px;
+    height: 65px;
     border-radius: 5px;
 }
 .sidebarVideos {
@@ -2916,7 +2928,7 @@ body{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 80px;
+    width: 70px;
     height: 1px;
     background: #fe4a55;
 }
@@ -3121,6 +3133,13 @@ body{
     .course_details_title_rating{
         max-width: 100%;
     }
+    .sidebarVideoContent{
+        width: 100px;
+        height: 55px;
+    }
+    .vodeoDetailsPlayer{
+        height: 400px;
+    }
 }
 @media (max-width: 1024px) {
     .video_player{
@@ -3192,6 +3211,14 @@ body{
     .course_details_body .container .course_details_main{
         padding-left: 0;
         padding-right: 0;
+    }
+
+/*-------- max-width: 1024px for Video Details page ----------*/
+    .videoDetails_body_section .container .video_body_main{
+        padding: 50px;
+    }
+    .vodeoDetailsPlayer{
+        height: 350px;
     }
 }
 @media (max-width: 992px) {
@@ -3571,6 +3598,22 @@ body{
     .advisor_inner_content .avisor_text{
         width: 70%;
     }
+
+
+    /* Video Details */
+    .videoDetails_body_section .container .video_body_main{
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+    .videoContent{
+        width: 100%;
+    }
+    .videoSidebar{
+        width: 100%;
+    }
+    .sidebar_post_inner{
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 940px) {
@@ -3906,6 +3949,14 @@ body{
         visibility: visible;
         opacity: 1;
     }
+
+    /* Video Details */
+    .videoDetails_body_section .container .video_body_main{
+        padding: 50px;
+    }
+    .vodeoDetailsPlayer{
+        height: 320px;
+    }
 }
 
 @media (max-width: 735px) {
@@ -4164,6 +4215,23 @@ body{
     .course_details_instractor .details_instractor_image {
         width: 100%;
     }
+
+    /* vedio details */
+    .videoDetails_body_section .container .video_body_main{
+        padding: 50px 0;
+    }
+    .video_body_main .videoTitle{
+        font-size: 20px;
+    }
+    .sidebarVideos{
+        font-size: 20px;
+    }
+    .sub_title{
+        font-size: 20px;
+    }
+    .vodeoDetailsPlayer{
+        height: 300px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -4180,6 +4248,17 @@ body{
         top: 190px;
         font-size: 15px;
     }
+    .blog_top_users .top_user_count_main .blog_user_count {
+        flex-direction: column;
+    }
+    .top_user_count_main .blog_user_count .blog_user_icon {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .blog_content_top .blog_top_users .top_user_count_main {
+        column-gap: 10px;
+        margin-bottom: 25px;
+    }
 }
 @media (max-width: 440px) {
     .video_player{
@@ -4187,6 +4266,9 @@ body{
     }
     .footer_bottom{
         padding: 20px 0;
+    }
+    .vodeoDetailsPlayer{
+        height: 270px;
     }
 
 /*----------- max-width: 440px for Blog Details page -----------------*/
@@ -4228,9 +4310,13 @@ body{
     .cart_body_main .promo_code input{
         height: 45px;
     }
-}
 
-@media (max-width: 360px) {
+    /* Video details */
+    .top_user_count_main .blog_user_count .blog_user_icon {
+        font-size: 20px;
+    }
+}
+@media (max-width: 369px) {
     .course_details_video_img button h3 {
         left: 90px;
         top: 140px;
@@ -4238,6 +4324,9 @@ body{
     .course_details_video_img button i {
         left: 130px;
         top: 40px;
+    }
+    .vodeoDetailsPlayer{
+        height: 235px;
     }
 }
 
