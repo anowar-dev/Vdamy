@@ -481,6 +481,7 @@ body{
     display: flex;
     justify-content: space-between;
     column-gap: 4%;
+    background: #fff;
 }
 .slider .container .slider_main .slider_user .slider_user_left{
     margin-top: 100px;
@@ -2879,7 +2880,7 @@ body{
     padding: 100px 0;
 }
 .video_main{
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px 5px 0 0;
 }
 
