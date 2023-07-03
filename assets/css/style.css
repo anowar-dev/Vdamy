@@ -481,7 +481,6 @@ body{
     display: flex;
     justify-content: space-between;
     column-gap: 4%;
-    background: #fff;
 }
 .slider .container .slider_main .slider_user .slider_user_left{
     margin-top: 100px;
@@ -712,7 +711,7 @@ body{
 .popular_crs_main .popular_crs_content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 2%;
     margin: 50px auto;
 }
@@ -3158,6 +3157,42 @@ body{
     .top{
         left: 93%;
     }
+    .slider_text_main {
+        margin: auto !important;
+        text-align: center !important;
+    }
+    .slider .container .slider_main{
+        text-align: center;
+    }
+    .slider_main .slider_user .slider_user_right{
+        margin-top: 50px !important;
+        margin-bottom: 0;
+    }
+    .slider_main .slider_user .slider_user_left{
+        margin-top: 50px !important;
+        margin-bottom: 100px;
+    }
+    .slider .container .slider_main .slider_text{
+        text-align: center;
+        margin: auto;
+        width: 100% !important;
+        padding-right: unset;
+    }
+    .slider .container .slider_main .slider_text h2{
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .slider .container .slider_main .slider_text p{
+        margin: 15px auto;
+        max-width: unset;
+    }
+    .slider_user{
+        width: 100%;
+    }
+    .slider_text_main .slider_text_btnm .btn_red{
+        margin: 10px auto !important;
+        text-align: center !important;
+    }
 /*-------- max-width: 1024px for Login/Register page ----------*/
 
     .auth_body_main .login{
@@ -3332,43 +3367,11 @@ body{
     .mobile_menu_inner a:hover{
         color: #FE4A55;
     }
-    .slider .container .slider_main{
-        text-align: center;
-    }
-    .slider_main .slider_user .slider_user_right{
-        margin-top: 50px !important;
-        margin-bottom: 0;
-    }
-    .slider_main .slider_user .slider_user_left{
-        margin-top: 50px !important;
-        margin-bottom: 100px;
-    }
-    .slider .container .slider_main .slider_text{
-        text-align: center;
-        margin: auto;
-        width: 100% !important;
-        padding-right: unset;
-    }
-    
-    .slider .container .slider_main .slider_text h2{
-        font-size: 35px;
-        line-height: 42px;
-    }
     .slider .container .slider_main .slider_text p{
         font-size: 15px;
         line-height: 27px;
         margin: 15px auto;
         max-width: unset;
-    }
-    .slider_user{
-        width: 100%;
-    }
-    .slider_text_main{
-        margin: auto !important;
-    }
-    .slider_text_main .slider_text_btnm{
-        margin: 10px auto !important;
-        text-align: center;
     }
     .brand_logo{
         padding-top: 0;
