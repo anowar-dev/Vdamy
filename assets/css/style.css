@@ -2933,6 +2933,14 @@ body{
 }
 
 /*=================== Gellery page design start ====================*/
+.gallery_title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.galleryTitleInner{
+    max-width: 767px;
+    margin: auto;
+}
 .imgDownload{
     margin-top: -30px;
     cursor: pointer;
@@ -2946,6 +2954,7 @@ body{
 }
 .imageModalBody{
     height: fit-content;
+    background: #f0ebd0fd;
 }
 .gelleryMain{
     display: grid;
@@ -4311,6 +4320,9 @@ body{
     .video_player{
         height: 250px;
     }
+    .imageModalBody{
+        height: 350px;
+    }
     .footer_bottom{
         padding: 20px 0;
     }
@@ -4374,6 +4386,9 @@ body{
     }
     .vodeoDetailsPlayer{
         height: 235px;
+    }
+    .imageModalBody{
+        height: 320px;
     }
 }
 
