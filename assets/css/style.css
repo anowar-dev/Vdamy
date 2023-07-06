@@ -1,5 +1,4 @@
 /*============== Css Start ==================*/
-
 /*---------- default Css ----------*/
 *{
     padding: 0;
@@ -2933,6 +2932,41 @@ body{
     background: #fe4a55;
 }
 
+/*=================== Gellery page design start ====================*/
+.imgDownload{
+    margin-top: -30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, .6);
+    transition: .04s;
+}
+.imgDownload:hover{
+    color: #000;
+}
+.imageModalBody{
+    height: fit-content;
+}
+.gelleryMain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.gelleryMain .singleGellery .image_inner_icon button{
+    border-color: transparent;
+    margin-top: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.singleGellery .image_inner_icon button img{
+    border-radius: 5px;
+    transition: .4s;
+}
+.singleGellery .image_inner_icon button img:hover{
+    transform: scale(1.1);
+    opacity: .5;
+}
+
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
     display: none;
@@ -2958,9 +2992,14 @@ body{
         padding-left: 50px;
         padding-right: 50px;
     }
-    .slider_main .slider_text{
-        width: 70% !important;
-        margin-top: 0 !important;
+    .slider_text_main .paragraph_head{
+        max-width: unset;
+    }
+    .slider .container .slider_main .slider_text{
+        text-align: center;
+        margin: auto;
+        width: 100% !important;
+        padding-right: unset;
     }
     .slider_main .slider_user{
         width: 100%;
@@ -3172,12 +3211,6 @@ body{
         margin-top: 50px !important;
         margin-bottom: 100px;
     }
-    .slider .container .slider_main .slider_text{
-        text-align: center;
-        margin: auto;
-        width: 100% !important;
-        padding-right: unset;
-    }
     .slider .container .slider_main .slider_text h2{
         font-size: 35px;
         line-height: 42px;
@@ -3255,6 +3288,11 @@ body{
     }
     .vodeoDetailsPlayer{
         height: 350px;
+    }
+
+    /* max-width: 1024px for gellery page */
+    .gelleryMain{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 992px) {
@@ -3960,6 +3998,11 @@ body{
     }
     .vodeoDetailsPlayer{
         height: 320px;
+    }
+
+    /* max-width: 767px for gellery page */
+    .gelleryMain{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
