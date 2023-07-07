@@ -2932,6 +2932,60 @@ body{
     background: #fe4a55;
 }
 
+/*==================== Course submit ============================*/
+.enrollSection{
+    background: #FEF8EF;
+}
+.enrollSection .container .auth_body{
+    position: relative;
+}
+.enrollSection .container .auth_body .animation_red_borders{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    animation-name: red_border_circle;
+    animation-duration: 5s;
+    animation-delay: .05s;
+    animation-iteration-count: infinite;
+}
+.enrollSection .container .auth_body .animation_yellow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation-name: rotate;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.courseSubmit{
+    width: 100%;
+    max-width: 767px;
+    margin: auto;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    background: #FE4A55;
+    color: white;
+    z-index: 1;
+}
+.courseSubmit .enrollForm input{
+    background: #C22B34;
+    color: white;
+}
+.courseSubmit .enrollForm ::placeholder{
+    color: white;
+}
+.courseSubmit .enrollForm p{
+    color: white;
+}
+.courseSubmit .btn_red{
+    background: wheat;
+    color: black;
+    font-weight: 800;
+}
+.courseSubmit .btn_red:hover{
+    color: white;
+}
+
+
 /*=================== Gellery page design start ====================*/
 .gallery_title{
     text-align: center;
